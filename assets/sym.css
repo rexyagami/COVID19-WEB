@@ -1,5 +1,11 @@
 body{
-    background-color: rgba(0, 0, 0, 0.2);;
+
+    background-image: url(/COVID19-WEB/assets/images/29475479.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     color: white;
     
 }
@@ -11,7 +17,7 @@ body{
     padding: 20px;
     border-radius: 20px;
     max-width: 800px;
-    
+    box-shadow: 10px 10px 80px 5px #888888;
     
 }
 .quest
@@ -35,7 +41,7 @@ body{
     background-color: lightblue;
     transition: 1s;
 }
-.box:active
+.box:focus
 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 600;
