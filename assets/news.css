@@ -101,12 +101,35 @@ body{
   color: #1069D9 !important;
 }
 
+.bg-purple{
+  background-color: #6675F6;
+}
+
+.claim-btn{
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.claim-btn:hover, .claim-btn:focus{
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+}
+
 /* Media Query */
 @media(max-width: 575.98px){
   .btn-div{
     width: auto;
   }
 }
+
+@media(max-width: 375px){
+  .congo{
+    font-size: 30px;
+  }
+}
+
 @media(max-width: 320px){
   .icon{
   font-size: 20px;    
