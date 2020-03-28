@@ -135,3 +135,10 @@ body{
   font-size: 20px;    
   }
 }
+
+
+/* CONTENT PAGE CSS */
+
+.border-bottom{
+  border-bottom: 1.5px dotted rgba(133, 133, 133, 0.379)!important;
+}
