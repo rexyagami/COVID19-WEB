@@ -8,8 +8,11 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bare - Start Bootstrap Template</title>
-
+  <title>News | Alpha Sanctuary</title>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <!-- IONIC ICON -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Bootstrap core CSS -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/news.css" rel="stylesheet">
@@ -19,47 +22,219 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Animated Dropdown</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Click Me!
-              </a>
-              <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
-              <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Alpha Sanctuary</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.3.1</li>
-          <li>jQuery 3.4.1</li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="">Contact Us</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Click Me!
+            </a>
+            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
         </ul>
       </div>
     </div>
-  </div>
+  </nav>
 
+
+  <!-- Page Content -->
+  <div class="container-fluid mt-1">
+    <div class="row">
+      <div class="col-sm-12">
+        <img class="w-100" src="/assets/images/Latest-News-Banner.png" alt="">
+      </div>
+    </div>
+  </div>
+<!-- News Area -->
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading -->
+    <div class="card shadow-sm my-3 rounded featured">
+      <div class="card-body">
+        <h4 class="card-text featured-title my-auto ml-3">Latest News</h4>
+      </div>
+    </div>
+    <hr>
+    <!-- News One -->
+    <div class="card my-3 shadow-sm">
+      <div class="card-body">
+          <div class="row">
+              <div class="col-md-5 my-auto">
+                <a href="https://www.moneycontrol.com/news/trends/health-trends/coronavirus-live-updates-more-than-100000-confirmed-covid-19-cases-in-the-us-5082251.html">
+                  <img class="img-fluid rounded mb-md-0" src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2020/3/18/3c83e57c8a604c948573d9d964e46633_18.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-7">
+                <h6 class="title mt-3">COVID-19 infections top 600,000 worldwide, long fight ahead</h6>
+                <small class="text-muted">March 27th, 2018</small>
+                <!-- <span class="badge badge-warning text-white mt-2 mb-4">Posted By Admin</span> -->
+                <p class="mt-4">The number of confirmed coronavirus infections worldwide topped 600,000 today as new cases stacked up quickly in Europe and the United States and officials dug in for a long fight against the pandemic. The latest landmark came only two days after the world passed half a million infections, according to a tally by John Hopkins University, showing that much work remains to be done to slow the spread of the virus. It showed more than 607,000 cases and a total of over 28,000 deaths. While the US. now leads the world in reported infections, with more than 104,000 cases, five countries exceed its roughly 1,700 deaths: Italy, Spain, China, Iran and France. (AP)</p>
+                <div class="clearfix">
+                  <div class="float-left">
+                    <a class="btn btn-primary" href="https://www.moneycontrol.com/news/trends/health-trends/coronavirus-live-updates-more-than-100000-confirmed-covid-19-cases-in-the-us-5082251.html">View More</a>
+                  </div>
+                  <div class="float-right">
+                    <small class="share">  Share : 
+                      <a class="text-muted" href="">
+                        <i class="icon ion-social-whatsapp-outline"></i>
+                      </a>
+                      <a href="">
+                        <i class="icon ion-social-facebook"></i>
+                      </a>
+                      <a href="">
+                        <i class="icon ion-social-twitter"></i>
+                      </a>
+                      </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- News Two -->
+    <div class="card my-3 shadow-sm">
+        <div class="card-body">
+          <div class="row">
+              <div class="col-md-5 my-auto">
+                <a href="https://www.business-standard.com/article/health/covid-19-in-numbers-what-today-s-coronavirus-data-trends-tell-us-120032800157_1.html">
+                  <img class="img-fluid rounded mb-md-0" src="https://static-news.moneycontrol.com/static-mcnews/2020/03/Coronavirus-6-770x433.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-7">
+                <h6 class="title mt-3">Covid-19 Factoid: What today's coronavirus data trends tell us</h6>
+                <small class="text-muted">March 27th, 2018</small>
+                <!-- <span class="badge badge-warning text-white mt-2 mb-4">Posted By Admin</span> -->
+                <p class="mt-4">Trying to make sense of a pandemic can be daunting, more so when it is in the middle of an ‘infodemic’. The coronavirus pandemic, or Covid-19, appears to be a rapidly unfolding tragedy, and the barrage of information thrown around daily hardly makes gauging its extent any easier.</p>
+                <div class="clearfix">
+                  <div class="float-left">
+                    <a class="btn btn-primary" href="https://www.business-standard.com/article/health/covid-19-in-numbers-what-today-s-coronavirus-data-trends-tell-us-120032800157_1.html">View More</a>
+                  </div>
+                  <div class="float-right">
+                    <small class="share">  Share : 
+                      <a class="text-muted" href="">
+                        <i class="icon ion-social-whatsapp-outline"></i>
+                      </a>
+                      <a href="">
+                        <i class="icon ion-social-facebook"></i>
+                      </a>
+                      <a href="">
+                        <i class="icon ion-social-twitter"></i>
+                      </a>
+                      </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- News Three -->
+    <div class="card my-3 shadow-sm">
+        <div class="card-body">
+          <div class="row">
+              <div class="col-md-5 my-auto">
+                <a href="https://www.indiatoday.in/technology/features/story/covid-19-cases-and-deaths-in-india-this-online-epidemic-calculator-shows-all-projections-1660613-2020-03-28">
+                  <img class="img-fluid rounded mb-md-0" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202003/covid-19_calculator_india-770x433.jpeg?lWDS03X5_DOI8xxtp3fZKXH7ycnFTzEQ" alt="">
+                </a>
+              </div>
+              <div class="col-md-7">
+                <h6 class="title mt-3">Coronavirus India cases and deaths: Best or worst, this online epidemic calculator shows Covid-19 projections</h6>
+                <small class="text-muted">March 27th, 2018</small>
+                <!-- <span class="badge badge-warning text-white mt-2 mb-4">Posted By Admin</span> -->
+                <p class="mt-4">There is nothing official about the tool but during a time when the information from government experts may not be coming or coming fast enough it can shed some clarity on what Covid-19 can do to India. Depending on what measures the country takes, and what impact these measures have on Covid-19 infections in India, coronavirus may end up killing around 1000 people to 5 million people in India, according to the Epidemic Calculator. Why such gap between these two numbers?</p>
+                <div class="clearfix">
+                  <div class="float-left">
+                    <a class="btn btn-primary" href="https://www.indiatoday.in/technology/features/story/covid-19-cases-and-deaths-in-india-this-online-epidemic-calculator-shows-all-projections-1660613-2020-03-28">View More</a>
+                  </div>
+                  <div class="float-right">
+                    <small class="share">  Share : 
+                      <a class="text-muted" href="">
+                        <i class="icon ion-social-whatsapp-outline"></i>
+                      </a>
+                      <a href="">
+                        <i class="icon ion-social-facebook"></i>
+                      </a>
+                      <a href="">
+                        <i class="icon ion-social-twitter"></i>
+                      </a>
+                      </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Project Four -->
+    <div class="card my-3 shadow-sm">
+        <div class="card-body">
+          <div class="row">
+              <div class="col-md-5 my-auto">
+                <a href="https://economictimes.indiatimes.com/news/politics-and-nation/karnataka-reports-2-new-covid-19-cases-without-travel-contact-history/articleshow/74858537.cms">
+                  <img class="img-fluid rounded mb-md-0" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202003/pic_2-770x433.jpeg?R8uH_hRxZbe2Tg.ti6UQ0xRVA.vAhG8k" alt="">
+                </a>
+              </div>
+              <div class="col-md-7">
+                <h6 class="title mt-3">Karnataka reports 2 new Covid-19 cases without travel & contact history</h6>
+                <small class="text-muted">March 27th, 2018</small>
+                <!-- <span class="badge badge-warning text-white mt-2 mb-4">Posted By Admin</span> -->
+                <p class="mt-4">Two positive cases of Covid-19 reported in Karnataka on Friday of patients not having a travel history to the virus-infected countries or known contact history has raised concerns about the possibilities of community transmission of the disease. The state health department has, however, denied the speculations and said there was no proof for community transmission.</p>
+                <div class="clearfix">
+                  <div class="float-left">
+                    <a class="btn btn-primary" href="https://economictimes.indiatimes.com/news/politics-and-nation/karnataka-reports-2-new-covid-19-cases-without-travel-contact-history/articleshow/74858537.cms">View More</a>
+                  </div>
+                  <div class="float-right">
+                    <small class="share">  Share : 
+                      <a class="text-muted" href="">
+                        <i class="icon ion-social-whatsapp-outline"></i>
+                      </a>
+                      <a href="">
+                        <i class="icon ion-social-facebook"></i>
+                      </a>
+                      <a href="">
+                        <i class="icon ion-social-twitter"></i>
+                      </a>
+                      </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
   <!-- Bootstrap core JavaScript -->
   <script src="/vendor/jquery/jquery.slim.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

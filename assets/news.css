@@ -42,4 +42,73 @@
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
 }
-/*  */
+/* End NAVBAR */
+
+/* Other CSS */
+
+body{
+  background-color: #EDEFF4;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.featured-title{
+  font-weight: 700;
+}
+
+.featured::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffdc11;
+  border-radius: 3px 0 0 0;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1em;
+  margin-bottom: .2em;
+  text-transform: uppercase;
+  letter-spacing: -.03em;
+  font-style: normal;
+}
+
+.badge{
+  padding: 0.5rem 0.5rem;
+}
+
+.share{
+  font-size: 16px;
+}
+
+.share a{
+  text-decoration: none;
+}
+
+.icon{
+  font-size: 20px;
+  color: #4b4b4b;
+  text-decoration: none;
+  margin: auto 0.5rem;
+}
+
+.share .icon:hover{
+  text-decoration: none;
+  color: #1069D9 !important;
+}
+
+/* Media Query */
+@media(max-width: 575.98px){
+  .btn-div{
+    width: auto;
+  }
+}
+@media(max-width: 320px){
+  .icon{
+  font-size: 20px;    
+  }
+}
