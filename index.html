@@ -8,10 +8,11 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bare - Start Bootstrap Template</title>
+  <title>COVID-19</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/COVID19-WEB/assets/sym.css" type="text/css" rel="stylesheet">
 
 </head>
 
@@ -20,7 +21,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">GO CORONA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,9 +35,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
+         
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
@@ -44,22 +43,201 @@
       </div>
     </div>
   </nav>
+       <!-- nav-bar ends -->
+
+
+ 
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container mid">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.3.1</li>
-          <li>jQuery 3.4.1</li>
-        </ul>
+      <div class="quest">
+       
+        Q.1 What is your gender?
       </div>
+      
+      
+      <button type="button" id="clr" class="btn box" onclick="chng()">Male</button>
+      <button type="button" id="clr" class="btn box" onclick="chng()">Female</button>
+      <button type="button" id="clr" class="btn box" onclick="chng()">Other</button>
+      
+      
     </div>
   </div>
 
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.2 What is your age-group?
+      </div>
+      
+      
+      <button type="button" class="btn box">Less than 12 years</button>
+      <button type="button" class="btn box">12-50 years</button>
+      <button type="button" class="btn box">51-60 years</button>
+      <button type="button" class="btn box">Above 60 years</button>
+      
+    </div>
+  </div>
+
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.3 Do you have any of the these health conditions?
+      </div>
+      <button type="button" class="btn box">Ashthma</button>
+      <button type="button" class="btn box">Chronic lung disease (COPD)</button>
+      <button type="button" class="btn box">Diabetes</button>
+      <button type="button" class="btn box">Heart Dieases</button>
+      <button type="button" class="btn box">Immuno-compromised conditions</button>
+      <button type="button" class="btn box">Pregnancy</button>
+      <button type="button" class="btn box">None of the above</button>
+     </div>
+  </div>
+
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.4 Have you someone in your family come in close contact with a confirmed COVID-19 patient in the last 14 days?
+      </div>
+       <button type="button" class="btn box">Yes</button>
+      <button type="button" class="btn box">No</button>
+      </div>
+  </div>
+
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.5 Have you someone in your family visited any of the below countries in the last 14 days?
+      </div>
+       <button type="button" class="btn box">China</button>
+      <button type="button" class="btn box">Italy</button>
+      <button type="button" class="btn box">Spain</button>
+      <button type="button" class="btn box">Iran</button>
+      <button type="button" class="btn box">Europe</button>
+      <button type="button" class="btn box">Middle East</button>
+      <button type="button" class="btn box">Southeast Asia</button>
+      <button type="button" class="btn box">Not listed above</button>
+      </div>
+  </div>
+
+
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.6 Have you or someone in your family travelled within India in public transport and came in close contact with someone with cough, cold, fever and shortness of breath in the last days?
+      </div>
+       <button type="button" class="btn box">Yes</button>
+      <button type="button" class="btn box">No</button>
+     </div>
+  </div>
+
+
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.7 Do you have Fever? 
+            </div>
+       <button type="button" class="btn box">Yes</button>
+      <button type="button" class="btn box">No</button>
+     </div>
+  </div>
+
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.8 Do you have Headache? 
+            </div>
+       <button type="button" class="btn box">Yes</button>
+      <button type="button" class="btn box">No</button>
+     </div>
+  </div>
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.9 Do you have cough? 
+            </div>
+       <button type="button" class="btn box">Yes</button>
+      <button type="button" class="btn box">No</button>
+     </div>
+  </div>
+
+  
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.10 Do you have Cold? 
+            </div>
+       <button type="button" class="btn box">Yes</button>
+      <button type="button" class="btn box">No</button>
+     </div>
+  </div>
+
+
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.11 Do you have sore throat? 
+            </div>
+       <button type="button" class="btn box">Yes</button>
+      <button type="button" class="btn box">No</button>
+     </div>
+  </div>
+
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.12 Do you fell shortness of breath? 
+            </div>
+       <button type="button" class="btn box">Yes</button>
+      <button type="button" class="btn box">No</button>
+     </div>
+  </div>
+
+  <div class="container mid">
+    <div class="row">
+      <div class="quest">
+       
+        Q.13 Do you have variance in your temperature? 
+            </div>
+       <button type="button" class="btn box">Yes</button>
+      <button type="button" class="btn box">No</button>
+      <input type="text" class="box" placeholder="Enter temperature in fahrenheit" required/ style="background-color: beige;text-align: center;width: 500px;border-radius: 10px;font-weight: 200;">
+     </div>
+  </div>
+
+
+
+
   <!-- Bootstrap core JavaScript -->
+  <script>
+    var x = document.getElementById("clr")
+    var y = document.getElementById("no")
+    
+    function chng()
+    {
+      x.style.backgroundColor="lightgreen";
+      y.style.backgroundColor="lightblue";
+    }
+ 
+    function no()
+    {
+      y.style.backgroundColor="#ff726f";
+      x.style.backgroundColor="lightblue";
+
+    }
+  </script>
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
