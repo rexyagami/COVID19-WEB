@@ -231,8 +231,8 @@
 
 <div id="result" style="display: none;margin-top: 100px;" >
   <div class="container mid mb-5">
-    <div class="row">      
-        <h1 id="risk" style="color: black;"></h1>
+    <div class="row text-center">      
+        <h1 id="risk" style="color: black;" class="ml-5 text-primary"></h1>
         
      </div>
      <div class="row" style="margin-top: 20px;">
@@ -244,7 +244,7 @@
              <circle cx="70" cy="70" r="70"></circle>
            </svg>
            <div class="number">
-              <h2>68<span>%</span></h2>
+              <h2 id="covid"><span>%</span></h2>
            </div>
          </div>
          <h2 class="text">COVID-19</h2>
@@ -258,7 +258,7 @@
             <circle cx="70" cy="70" r="70"></circle>
           </svg>
           <div class="number">
-             <h2>20<span>%</span></h2>
+             <h2 id="flu"><span>%</span></h2>
           </div>
         </div>
         <h2 class="text">FLU</h2>
@@ -273,7 +273,7 @@
             <circle cx="70" cy="70" r="70"></circle>
           </svg>
           <div class="number">
-             <h2>12<span>%</span></h2>
+             <h2 id="allergy"><span>%</span></h2>
           </div>
         </div>
         <h2 class="text">ALLERGY</h2>
@@ -287,7 +287,7 @@
 
 
 <script>
-  var temp,points=0,risk;
+  var temp,points=0,risk,covid=0,flu=0,allergy=0;
   function calc(){
     $('#submit_btn').html('Calculating..')
 
@@ -298,17 +298,35 @@
 
     if(points>4){
       risk='HIGH'
+      covid=(points/8)*100;
+      flu = 25;
+      allergy=10;
     }
     else if(points>2 && points<=4){
       risk='MEDIUM';
+      covid=(points/8)*100;
+      flu = 65;
+      allergy=40;
     }
     else {
       risk='LOW';
+      covid=(points/8)*100;
+      flu = 30;
+      allergy=40;
     }
     console.log(risk);
     $('#page_content').hide();
     $('#risk').html(risk);
     $('#result').show();
+    $('#covid').html(covid);
+    var cov = 440 - (440 * covid) / 100;
+    document.getElementsByTagName('circle')[1].style.strokeDashoffset=cov;
+    $('#flu').html(flu);
+    var cov = 440 - (440 * flu) / 100;
+    document.getElementsByTagName('circle')[3].style.strokeDashoffset=cov;
+    $('#allergy').html(allergy);
+    var cov = 440 - (440 * allergy) / 100;
+    document.getElementsByTagName('circle')[5].style.strokeDashoffset=cov;
   }
 </script>
   <!-- Bootstrap core JavaScript -->
