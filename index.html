@@ -229,10 +229,57 @@
   </div>
 </div>
 
-<div id="result" style="display: none;margin-top: 200;" >
+<div id="result" style="display: none;margin-top: 100px;" >
   <div class="container mid mb-5">
     <div class="row">      
         <h1 id="risk" style="color: black;"></h1>
+        
+     </div>
+     <div class="row" style="margin-top: 20px;">
+       <!-- box1 -->
+       <div class="col-md-4 meter-box1">
+         <div class=percent>
+           <svg>
+             <circle cx="70" cy="70" r="70"></circle>
+             <circle cx="70" cy="70" r="70"></circle>
+           </svg>
+           <div class="number">
+              <h2>68<span>%</span></h2>
+           </div>
+         </div>
+         <h2 class="text">COVID-19</h2>
+       </div>
+       <!-- box1 end -->
+       <!-- box2 -->
+       <div class="col-md-4 meter-box2">
+        <div class=percent>
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+          <div class="number">
+             <h2>20<span>%</span></h2>
+          </div>
+        </div>
+        <h2 class="text">FLU</h2>
+      </div>
+       <!-- box2 ends -->
+       <!-- box3 -->
+
+       <div class="col-md-4 meter-box3">
+        <div class=percent>
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+          <div class="number">
+             <h2>12<span>%</span></h2>
+          </div>
+        </div>
+        <h2 class="text">ALLERGY</h2>
+      </div> 
+       <!-- box3 ends -->
+
      </div>
   </div>
 </div>
@@ -250,13 +297,13 @@
     }
 
     if(points>4){
-      risk='high'
+      risk='HIGH'
     }
     else if(points>2 && points<=4){
-      risk='medium';
+      risk='MEDIUM';
     }
     else {
-      risk='low';
+      risk='LOW';
     }
     console.log(risk);
     $('#page_content').hide();
@@ -265,24 +312,7 @@
   }
 </script>
   <!-- Bootstrap core JavaScript -->
-  <!-- <script>
-    var x = document.getElementById("clr")
-    var y = document.getElementById("no")
-    
-    function chng()
-    {
-      x.style.backgroundColor="lightgreen";
-      y.style.backgroundColor="lightblue";
-    }
- 
-    function no()
-    {
-      y.style.backgroundColor="#ff726f";
-      x.style.backgroundColor="lightblue";
-
-    }
-  </script> -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
+ <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

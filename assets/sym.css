@@ -1,6 +1,6 @@
 body{
 
-    background-image: url(/COVID19-WEB/assets/images/29475479.jpg);
+    background-image: url(/assets/images/29475479.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@ body{
 }
 .mid
 {
-    
+    margin-top: 100px;
     background-color: white;
     margin-top: 50px;
     padding: 20px;
@@ -52,4 +52,229 @@ body{
     margin: 20px;
     background-color: lightgreen;
     
+}
+/* box1 */
+
+.meter-box1
+{   
+    position: relative;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+   
+}
+.meter-box1 .percent
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.meter-box1 .percent svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.meter-box1 .percent svg circle
+{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke:#000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.meter-box1 .percent svg circle:nth-child(1)
+{
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.meter-box1 .percent svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 -  (440 * 68) / 100);
+    stroke: #03a9f4;
+}
+.meter-box1 .percent .number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #03a9f4;
+}
+.meter-box1 .percent .number h2
+{
+    font-size: 40px;
+}
+.meter-box1 .percent .number h2 span
+{
+    font-size: 24px;
+}
+.meter-box1 .text
+{
+    padding: 10px 0 0;
+    color: #03a9f4;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* box1 ends */
+
+.meter-box2
+{   
+    position: relative;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+   
+}
+.meter-box2 .percent
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.meter-box2 .percent svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.meter-box2 .percent svg circle
+{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke:#000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.meter-box2 .percent svg circle:nth-child(1)
+{
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.meter-box2 .percent svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 -  (440 * 20) / 100);
+    stroke: #fc4040;
+}
+.meter-box2 .percent .number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fc4040;
+}
+.meter-box2 .percent .number h2
+{
+    font-size: 40px;
+}
+.meter-box2 .percent .number h2 span
+{
+    font-size: 24px;
+}
+.meter-box2 .text
+{
+    padding: 10px 0 0;
+    color: #fc4040;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* box2 ends */
+
+.meter-box3
+{   
+    position: relative;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+   
+}
+.meter-box3 .percent
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.meter-box3 .percent svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.meter-box3 .percent svg circle
+{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke:#000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.meter-box3 .percent svg circle:nth-child(1)
+{
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.meter-box3 .percent svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 -  (440 * 20) / 100);
+    stroke: #028860;
+}
+.meter-box3 .percent .number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #028860;
+}
+.meter-box3 .percent .number h2
+{
+    font-size: 40px;
+}
+.meter-box3 .percent .number h2 span
+{
+    font-size: 15px;
+}
+.meter-box3 .text
+{
+    padding: 10px 0 0;
+    color: #028860;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
